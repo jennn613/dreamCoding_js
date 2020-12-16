@@ -18,6 +18,23 @@ div{
     border-radius: 8px;
 }
 
+.buttonBox {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 8%;
+    right: 40%;
+}
+
+.buttonBox > button {
+    width: 100px;
+    height: auto;
+}
+
+.buttonBox > button:not(:last-child){
+    margin-right: 20px;
+}
+
 .special {
     background-color: lightsteelblue;
 }
@@ -27,6 +44,11 @@ div{
     <title>coordinates</title>
 </head>
 <body>
+    <aside class="buttonBox">
+        <button>scroll by 100px</button>
+        <button>scroll to 100px</button>
+        <button>scroll into special</button>
+    </aside>
  <div></div>
  <div></div>
  <div></div>
